@@ -14,13 +14,14 @@
 		F3CC947518AC9BCA00129BA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CC947418AC9BCA00129BA1 /* main.m */; };
 		F3CC947918AC9BCA00129BA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CC947818AC9BCA00129BA1 /* AppDelegate.m */; };
 		F3CC947C18AC9BCA00129BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CC947A18AC9BCA00129BA1 /* Main.storyboard */; };
-		F3CC947F18AC9BCA00129BA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CC947E18AC9BCA00129BA1 /* ViewController.m */; };
 		F3CC948118AC9BCA00129BA1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CC948018AC9BCA00129BA1 /* Images.xcassets */; };
 		F3CC948818AC9BCA00129BA1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CC948718AC9BCA00129BA1 /* XCTest.framework */; };
 		F3CC948918AC9BCA00129BA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CC946818AC9BCA00129BA1 /* Foundation.framework */; };
 		F3CC948A18AC9BCA00129BA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CC946C18AC9BCA00129BA1 /* UIKit.framework */; };
 		F3CC949218AC9BCA00129BA1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3CC949018AC9BCA00129BA1 /* InfoPlist.strings */; };
 		F3CC949418AC9BCA00129BA1 /* SparkCoreDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CC949318AC9BCA00129BA1 /* SparkCoreDemoTests.m */; };
+		F3CC94A118AC9BE900129BA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CC949E18AC9BE900129BA1 /* ViewController.m */; };
+		F3CC94A218AC9BE900129BA1 /* SparkCore.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CC94A018AC9BE900129BA1 /* SparkCore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		F3CC947718AC9BCA00129BA1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F3CC947818AC9BCA00129BA1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F3CC947B18AC9BCA00129BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F3CC947D18AC9BCA00129BA1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F3CC947E18AC9BCA00129BA1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F3CC948018AC9BCA00129BA1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F3CC948618AC9BCA00129BA1 /* SparkCoreDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparkCoreDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CC948718AC9BCA00129BA1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F3CC948F18AC9BCA00129BA1 /* SparkCoreDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SparkCoreDemoTests-Info.plist"; sourceTree = "<group>"; };
 		F3CC949118AC9BCA00129BA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F3CC949318AC9BCA00129BA1 /* SparkCoreDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparkCoreDemoTests.m; sourceTree = "<group>"; };
+		F3CC949D18AC9BE900129BA1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F3CC949E18AC9BE900129BA1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F3CC949F18AC9BE900129BA1 /* SparkCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SparkCore.h; sourceTree = "<group>"; };
+		F3CC94A018AC9BE900129BA1 /* SparkCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SparkCore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +117,11 @@
 			children = (
 				F3CC947718AC9BCA00129BA1 /* AppDelegate.h */,
 				F3CC947818AC9BCA00129BA1 /* AppDelegate.m */,
+				F3CC949D18AC9BE900129BA1 /* ViewController.h */,
+				F3CC949E18AC9BE900129BA1 /* ViewController.m */,
+				F3CC949F18AC9BE900129BA1 /* SparkCore.h */,
+				F3CC94A018AC9BE900129BA1 /* SparkCore.m */,
 				F3CC947A18AC9BCA00129BA1 /* Main.storyboard */,
-				F3CC947D18AC9BCA00129BA1 /* ViewController.h */,
-				F3CC947E18AC9BCA00129BA1 /* ViewController.m */,
 				F3CC948018AC9BCA00129BA1 /* Images.xcassets */,
 				F3CC946F18AC9BCA00129BA1 /* Supporting Files */,
 			);
@@ -249,7 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3CC947F18AC9BCA00129BA1 /* ViewController.m in Sources */,
+				F3CC94A218AC9BE900129BA1 /* SparkCore.m in Sources */,
+				F3CC94A118AC9BE900129BA1 /* ViewController.m in Sources */,
 				F3CC947918AC9BCA00129BA1 /* AppDelegate.m in Sources */,
 				F3CC947518AC9BCA00129BA1 /* main.m in Sources */,
 			);

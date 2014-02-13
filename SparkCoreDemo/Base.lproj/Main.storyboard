@@ -1,25 +1,103 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5037.3" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dNz-7G-7se">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--View Controller-->
+        <scene sceneID="ked-56-gRh">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="dNz-7G-7se" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="NUw-Ay-Mzh"/>
+                        <viewControllerLayoutGuide type="bottom" id="sSa-OI-0c5"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="btR-FX-uop">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deu-b6-I7w">
+                                <rect key="frame" x="127" y="106" width="66" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Single">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startBlinking:" destination="dNz-7G-7se" eventType="touchUpInside" id="v2X-6c-RXk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fia-i6-K94">
+                                <rect key="frame" x="72" y="35" width="177" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Get Temperature">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadTemperature:" destination="dNz-7G-7se" eventType="touchUpInside" id="xNA-1F-6mw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVa-Dt-02E">
+                                <rect key="frame" x="122" y="177" width="76" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Double">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startBlinking:" destination="dNz-7G-7se" eventType="touchUpInside" id="N08-Ue-ZYy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJV-y2-RLz">
+                                <rect key="frame" x="132" y="248" width="57" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Triple">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startBlinking:" destination="dNz-7G-7se" eventType="touchUpInside" id="w5Q-0R-kLI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="X6Z-hE-3vb">
+                                <rect key="frame" x="20" y="309" width="280" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.9954396486" blue="0.72729140520000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="zas-6G-Pa1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78983904370000002" green="0.90953266190000004" blue="0.99943369630000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mVa-Dt-02E" firstAttribute="top" secondItem="deu-b6-I7w" secondAttribute="bottom" constant="30" id="9EL-Y1-jxP"/>
+                            <constraint firstItem="uJV-y2-RLz" firstAttribute="top" secondItem="mVa-Dt-02E" secondAttribute="bottom" constant="30" id="BXg-DA-mSs"/>
+                            <constraint firstItem="X6Z-hE-3vb" firstAttribute="top" secondItem="uJV-y2-RLz" secondAttribute="bottom" constant="20" id="FcO-nv-ReB"/>
+                            <constraint firstItem="X6Z-hE-3vb" firstAttribute="leading" secondItem="btR-FX-uop" secondAttribute="leading" constant="20" id="GEa-OK-qLx"/>
+                            <constraint firstItem="deu-b6-I7w" firstAttribute="centerX" secondItem="uJV-y2-RLz" secondAttribute="centerX" id="W7B-8t-KG2"/>
+                            <constraint firstAttribute="trailing" secondItem="X6Z-hE-3vb" secondAttribute="trailing" constant="20" id="a2u-14-EBE"/>
+                            <constraint firstItem="deu-b6-I7w" firstAttribute="top" secondItem="fia-i6-K94" secondAttribute="bottom" constant="30" id="eo0-g4-W5r"/>
+                            <constraint firstAttribute="centerX" secondItem="deu-b6-I7w" secondAttribute="centerX" id="krX-jE-2Go"/>
+                            <constraint firstAttribute="centerX" secondItem="fia-i6-K94" secondAttribute="centerX" id="rBL-kk-yoq"/>
+                            <constraint firstItem="fia-i6-K94" firstAttribute="top" secondItem="NUw-Ay-Mzh" secondAttribute="bottom" constant="15" id="xlT-z8-VUI"/>
+                            <constraint firstItem="deu-b6-I7w" firstAttribute="centerX" secondItem="mVa-Dt-02E" secondAttribute="centerX" id="yIg-wu-dK7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="doubleButton" destination="mVa-Dt-02E" id="80V-IP-PUP"/>
+                        <outlet property="getTempButton" destination="fia-i6-K94" id="2ni-pb-bxu"/>
+                        <outlet property="label" destination="X6Z-hE-3vb" id="EJS-0n-uzW"/>
+                        <outlet property="singleButton" destination="deu-b6-I7w" id="SeW-sJ-imI"/>
+                        <outlet property="tripleButton" destination="uJV-y2-RLz" id="2TS-ha-lxt"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9HK-fP-3VY" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="180" y="-433"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
